@@ -1,2036 +1,318 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Máy tính CT</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/favicon.ico">
-    <link rel="stylesheet" href="assets/css/plugins.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Máy tính CT</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="off_canvars_overlay">
+  <script sr="D:\thietkeweb\baitaplon\web\styles.js"></script>
+  <header>
+    <div class="header-container">
+      <h1 class="logo">
+        <img src="images/logo/logo.png" alt="Logo">
+      </h1>
+      
+      <h1 class="title">Máy tính CT</h1>
+      <div class="search-box">
+        <input type="text" placeholder="Tìm kiếm...">
+        <button type="submit">Tìm kiếm</button>
+      </div>
+      <h1 class="title1"><a href="./dangnhap.html">Đăng nhập/ Đăng ký</a></h1>
     </div>
-    <div class="Offcanvas_menu">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="canvas_open">
-                        <a href="javascript:void(0)"><i class="ion-navicon"></i></a>
-                    </div>
-                    <div class="Offcanvas_menu_wrapper">
-                        <div class="canvas_close">
-                            <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
-                        </div>
-                        <div class="support_info">
-                           
-                        </div>
-                        <div class="top_right text-end">
-                            <ul>
-                                <li><a href="login.html">Đăng nhập</a></li>
-                                <li><a href="register.html">Đăng ký</a></li>
-                            </ul>
-                        </div>
-                        <div class="search_container">
-                            <form action="#">
-                                <div class="hover_category">
-                                    <select class="select_option" name="select" id="categori">
-                                        <option selected value="1">Tất cả danh mục</option>
-                                        <option value="2">Laptop</option>
-                                        <option value="3">PC GVN</option>
-                                        <option value="4">Apple</option>
-                                        <option value="5">Màn hình</option>
-                                        <option value="6">Bàn phím</option>
-                                        <option value="7">Chuột + Lót chuột</option>
-                                        <option value="8">Ghế - Bàn</option>
-                                        <option value="9">Tai nghe - Loa</option>
-                                        <option value="10">Phụ kiện</option>
-                                        <option value="11">Thủ thuật - Giải đáp</option>
-                                    </select>
-                                </div>
-                                <div class="search_box">
-                                    <input placeholder="Bạn cần tìm gì?" type="text">
-                                    <button type="submit">Tìm kiếm</button>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="middel_right_info">
-                            <div class="header_wishlist">
-                                <a href="wishlist.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                <span class="wishlist_quantity">3</span>
-                            </div>
-                            <div class="mini_cart_wrapper">
-                                <a href="javascript:void(0)"><i class="fa fa-shopping-bag"
-                                        aria-hidden="true"></i>0.000 VND <i class="fa fa-angle-down"></i></a>
-                                <span class="cart_quantity">2</span>
-                                <!--mini cart-->
-                                <div class="mini_cart">
-                                    <div class="cart_item">
-                                        <div class="cart_img">
-                                            <a href="#"><img src="assets/images/s-product/product.jpg" alt=""></a>
-                                        </div>
-                                        <div class="cart_info">
-                                            <a href="#">Laptop 1</a>
-                                            <p><span> 10000 VND </span></p>
-                                        </div>
-                                        <div class="cart_remove">
-                                            <a href="#"><i class="ion-android-close"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="cart_item">
-                                        <div class="cart_img">
-                                            <a href="#"><img src="assets/images/s-product/product2.jpg" alt=""></a>
-                                        </div>
-                                        <div class="cart_info">
-                                            <a href="#">Laptop 2</a>
-                                            <p><span> 10000VND </span></p>
-                                        </div>
-                                        <div class="cart_remove">
-                                            <a href="#"><i class="ion-android-close"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="mini_cart_table">
-                                        <div class="cart_total">
-                                            <span>Tổng tất cả:</span>
-                                            <span class="price">10000 VND</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="mini_cart_footer">
-                                        <div class="cart_button">
-                                            <a href="cart.html">Xem giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--mini cart end-->
-                            </div>
-                        </div>
-                        <div id="menu" class="text-start ">
-                            <ul>
-                                <li>
-                                    <a class="active" href="index.html">TRANG CHỦ</a>
-                                </li>
-                                <li class="mega_items">
-                                    <a href="news.html">MỚI NHẤT</a>                                                 
-                                </li>
-                                <li>
-                                    <a href="blog.html">BLOG</a>   
-                                </li>
-                                <li>
-                                    <a href="about.html">VỀ CHÚNG TÔI </a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">LIÊN HỆ CHÚNG TÔI</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="Offcanvas_footer">
-                            <span><a href="#"><i class="fa fa-envelope-o"></i> info@yourdomain.com</a></span>
-                            <ul>
-                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <nav>
+      <ul>
+        <li><a href="#">Trang Chủ</a></li>
+        <li><a href="#">Sản Phẩm</a></li>
+        <li><a href="#">Giỏ Hàng</a></li>
+        <li><a href="#">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="slider">
+    <div class="slides">
+      <div class="slide"><img src="./slider1.jpg" alt="Slide 1"></div>
+      <div class="slide"><img src="./slider2.jpg" alt="Slide 2"></div>
+      <div class="slide"><img src="./slider1.jpg" alt="Slide 3"></div>
+      
     </div>
-    <!--Offcanvas menu area end-->
-
-    <header>
-        <div class="main_header">
-            <!--header top start-->
-            <div class="header_top">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="support_info">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="top_right text-end">
-                                <ul>
-                                    <li><a href="login.html"> Đăng nhập </a></li>
-                                    <li><a href="register.html"> Đăng ký </a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--header top start-->
-            <!--header middel start-->
-            <div class="header_middle">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="logo">
-                                <a href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-6">
-                            <div class="middel_right">
-                                <div class="search_container">
-                                    <form action="#">
-                                        <div class="hover_category">
-                                            <select class="select_option" name="select" id="categori1">
-                                                <option selected value="1">Tất cả danh mục</option>
-                                                <option value="2">Laptop</option>
-                                                <option value="3">PC GVN</option>
-                                                <option value="4">Apple</option>
-                                                <option value="5">Màn hình</option>
-                                                <option value="6">Bàn phím</option>
-                                                <option value="7">Chuột + Lót chuột</option>
-                                                <option value="8">Ghế - Bàn</option>
-                                                <option value="9">Tai nghe - Loa</option>
-                                                <option value="10">Phụ kiện</option>
-                                                <option value="11">Thủ thuật - Giải đáp</option>
-                                            </select>
-                                        </div>
-                                        <div class="search_box">
-                                            <input placeholder="Bạn cần tìm gì?" type="text">
-                                            <button type="submit">Tìm kiếm</button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="middel_right_info">
-                                    <div class="header_wishlist">
-                                        <a href="wishlist.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        <span class="wishlist_quantity">3</span>
-                                    </div>
-                                    <div class="mini_cart_wrapper">
-                                        <a href="javascript:void(0)"><i class="fa fa-shopping-bag"
-                                                aria-hidden="true"></i>0.000 VND <i class="fa fa-angle-down"></i></a>
-                                        <span class="cart_quantity">2</span>
-                                        <!--mini cart-->
-                                        <div class="mini_cart">
-                                            <div class="cart_item">
-                                                <div class="cart_img">
-                                                    <a href="#"><img src="assets/images/s-product/product.jpg" alt=""></a>
-                                                </div>
-                                                <div class="cart_info">
-                                                    <a href="#">Laptop 1</a>
-                                                    <p><span> 10000 VND </span></p>
-                                                </div>
-                                                <div class="cart_remove">
-                                                    <a href="#"><i class="ion-android-close"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="cart_item">
-                                                <div class="cart_img">
-                                                    <a href="#"><img src="assets/images/s-product/product2.jpg" alt=""></a>
-                                                </div>
-                                                <div class="cart_info">
-                                                    <a href="#">Laptop 2</a>
-                                                    <p><span> 10000VND </span></p>
-                                                </div>
-                                                <div class="cart_remove">
-                                                    <a href="#"><i class="ion-android-close"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="mini_cart_table">
-                                                <div class="cart_total">
-                                                    <span>Tổng tất cả:</span>
-                                                    <span class="price">10000 VND</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="mini_cart_footer">
-                                                <div class="cart_button">
-                                                    <a href="cart.html">Xem giỏ hàng</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--mini cart end-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--header middel end-->
-            <!--header bottom satrt-->
-            <div class="main_menu_area">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-md-12">
-                            <div class="categories_menu">
-                                <div class="categories_title">
-                                    <h2 class="categori_toggle">Tất cả danh mục</h2>
-                                </div>
-                                <div class="categories_menu_toggle" >
-                                    <ul>
-                                        <li class="menu_item_children"><a href="#">Laptop<i
-                                                    class="fa fa-angle-right"></i></a>
-                                            <ul class="categories_mega_menu">
-                                                <li class="menu_item_children"><a href="#">Thương hiệu</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Sweater</a></li>
-                                                        <li><a href="#">Evening</a></li>
-                                                        <li><a href="#">Day</a></li>
-                                                        <li><a href="#">Sports</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">Handbags</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Shoulder</a></li>
-                                                        <li><a href="#">Satchels</a></li>
-                                                        <li><a href="#">kids</a></li>
-                                                        <li><a href="#">coats</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">shoes</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Ankle Boots</a></li>
-                                                        <li><a href="#">Clog sandals </a></li>
-                                                        <li><a href="#">run</a></li>
-                                                        <li><a href="#">Books</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">Clothing</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Coats Jackets </a></li>
-                                                        <li><a href="#">Raincoats</a></li>
-                                                        <li><a href="#">Jackets</a></li>
-                                                        <li><a href="#">T-shirts</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu_item_children"><a href="#">PC GVN<i
-                                                    class="fa fa-angle-right"></i></a>
-                                            <ul class="categories_mega_menu column_3">
-                                                <li class="menu_item_children"><a href="#">Chair</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Dining room</a></li>
-                                                        <li><a href="#">bedroom</a></li>
-                                                        <li><a href="#"> Home & Office</a></li>
-                                                        <li><a href="#">living room</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">Lighting</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Ceiling Lighting</a></li>
-                                                        <li><a href="#">Wall Lighting</a></li>
-                                                        <li><a href="#">Outdoor Lighting</a></li>
-                                                        <li><a href="#">Smart Lighting</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">Sofa</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Fabric Sofas</a></li>
-                                                        <li><a href="#">Leather Sofas</a></li>
-                                                        <li><a href="#">Corner Sofas</a></li>
-                                                        <li><a href="#">Sofa Beds</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu_item_children"><a href="#">Apple<i
-                                                    class="fa fa-angle-right"></i></a>
-                                            <ul class="categories_mega_menu column_2">
-                                                <li class="menu_item_children"><a href="#">Brake Tools</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Driveshafts</a></li>
-                                                        <li><a href="#">Spools</a></li>
-                                                        <li><a href="#">Diesel </a></li>
-                                                        <li><a href="#">Gasoline</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">Emergency Brake</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Dolls for Girls</a></li>
-                                                        <li><a href="#">Girls' Learning Toys</a></li>
-                                                        <li><a href="#">Arts and Crafts for Girls</a></li>
-                                                        <li><a href="#">Video Games for Girls</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu_item_children"><a href="#">Màn hình<i
-                                                    class="fa fa-angle-right"></i></a>
-                                            <ul class="categories_mega_menu column_2">
-                                                <li class="menu_item_children"><a href="#">Check Trousers</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Building</a></li>
-                                                        <li><a href="#">Electronics</a></li>
-                                                        <li><a href="#">action figures </a></li>
-                                                        <li><a href="#">specialty & boutique toy</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">Calculators</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Dolls for Girls</a></li>
-                                                        <li><a href="#">Girls' Learning Toys</a></li>
-                                                        <li><a href="#">Arts and Crafts for Girls</a></li>
-                                                        <li><a href="#">Video Games for Girls</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Bàn phím</a></li>
-                                        <li><a href="#">Chuột + Lót chuột</a></li>
-                                        <li><a href="#">Ghế - Bàn</a></li>
-                                        <li><a href="#">Tai nghe - Loa</a></li>
-                                        <li><a href="#">Phụ kiện</a></li>                                       
-                                        <li id="cat_toggle" class="has-sub"><a href="#">Thêm danh mục</a>
-                                            <ul class="categorie_sub">
-                                                <li><a href="#">Thủ thuật - Giải đáp</a></li>
-                                            </ul>
-
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-12">
-                            <div class="main_menu menu_position">
-                                <nav>
-                                    <ul>
-                                        <li>
-                                            <a class="active" href="index.html">Trang chủ</a>
-                                        </li>
-                                        <li class="mega_items">
-                                            <a href="news.html">MỚI NHẤT</a>                                                 
-                                        </li>
-                                        <li>
-                                            <a href="blog.html">BLOG</a>   
-                                        </li>
-                                        <li>
-                                            <a href="about.html">VỀ CHÚNG TÔI </a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">LIÊN HỆ CHÚNG TÔI</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--header bottom end-->
-        </div>
-    </header>
-    <!--header area end-->
-
-    <!--sticky header area start-->
-    <div class="sticky_header_area sticky-header">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-3">
-                    <div class="logo">
-                        <a href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="sticky_header_right menu_position">
-                        <div class="main_menu">
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <a class="active" href="index.html">Trang chủ</a>
-                                    </li>
-                                    <li class="mega_items">
-                                        <a href="news.html">MỚI NHẤT</a>                                                 
-                                    </li>
-                                    <li>
-                                        <a href="blog.html">BLOG</a>   
-                                    </li>
-                                    <li>
-                                        <a href="about.html">VỀ CHÚNG TÔI </a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">LIÊN HỆ CHÚNG TÔI</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="middel_right_info">
-                            <div class="header_wishlist">
-                                <a href="wishlist.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                <span class="wishlist_quantity">3</span>
-                            </div>
-                            <div class="mini_cart_wrapper">
-                                <a href="javascript:void(0)"><i class="fa fa-shopping-bag"
-                                        aria-hidden="true"></i>0.000 VND <i class="fa fa-angle-down"></i></a>
-                                <span class="cart_quantity">2</span>
-                                <!--mini cart-->
-                                <div class="mini_cart">
-                                    <div class="cart_item">
-                                        <div class="cart_img">
-                                            <a href="#"><img src="assets/images/s-product/product.jpg" alt=""></a>
-                                        </div>
-                                        <div class="cart_info">
-                                            <a href="#">Laptop 1</a>
-                                            <p><span> 10000 VND </span></p>
-                                        </div>
-                                        <div class="cart_remove">
-                                            <a href="#"><i class="ion-android-close"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="cart_item">
-                                        <div class="cart_img">
-                                            <a href="#"><img src="assets/images/s-product/product2.jpg" alt=""></a>
-                                        </div>
-                                        <div class="cart_info">
-                                            <a href="#">Laptop 2</a>
-                                            <p><span> 10000VND </span></p>
-                                        </div>
-                                        <div class="cart_remove">
-                                            <a href="#"><i class="ion-android-close"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="mini_cart_table">
-                                        <div class="cart_total">
-                                            <span>Tổng tất cả:</span>
-                                            <span class="price">10000 VND</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="mini_cart_footer">
-                                        <div class="cart_button">
-                                            <a href="cart.html">Xem giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--mini cart end-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--sticky header area end-->
-    <!-- main -->
-    <!--slider area start-->
-    <section class="slider_section mb-70">
-        <div class="slider_area owl-carousel">
-            <div class="single_slider d-flex align-items-center" data-bgimg="assets/images/slider/slider1.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="slider_content">
-                                <h1> best skin</h1>
-                                <h2>qled 75 inch q7f</h2>
-                                <p>exclusive offer <span> 20% off </span> this week</p>
-                                <a class="button" href="shop.html">shopping now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="single_slider d-flex align-items-center" data-bgimg="assets/images/slider/slider4.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="slider_content">
-                                <h1>Dual Front</h1>
-                                <h2>camera 20mp</h2>
-                                <p>exclusive offer <span> 20% off </span> this week</p>
-                                <a class="button" href="shop.html">shopping now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slider d-flex align-items-center" data-bgimg="assets/images/slider/slider6.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="slider_content">
-                                <h1>Hurry Up!</h1>
-                                <h2>IN THE WORD 2022</h2>
-                                <p>exclusive offer <span> 20% off </span> this week</p>
-                                <a class="button" href="shop.html">shopping now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <button class="slider-button prev">&#10094;</button>
+    <button class="slider-button next">&#10095;</button>
+  </section>
+  
+  <main><br><br><br>
+    <h2>Danh Sách Laptop</h2> <br>
+    <section class="products">
+      
+      <div class="product">
+        <img src="./images/product/sp1.jpg" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/sp2.jpg" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/sp3.jpg" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/sp4.jpg" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/sp5.jpg" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/sp6.jpg" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/sp7.jpg" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/sp8.jpg" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/sp9.jpg" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/sp10.jpg" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/sp11.jpg" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/sp12.jpg" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <!-- Thêm các sản phẩm khác tương tự -->
+    </section><br><br><br>
+    <h2>Danh Sách PC</h2> <br>
+    <section class="products">
+      
+      <div class="product">
+        <img src="./images/product/pc1.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/pc2.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/pc3.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/pc4.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/pc5.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/pc6.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/pc7.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/pc8.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/pc9.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/pc10.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/pc11.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/pc12.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <!-- Thêm các sản phẩm khác tương tự -->
+    </section><br><br><br>
+    <h2>Danh Sách Màn Hình</h2> <br>
+    <section class="products">
+      
+      <div class="product">
+        <img src="./images/product/mh1.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/mh2.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/mh3.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/mh4.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/mh5.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/mh6.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/mh7.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/mh8.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/mh9.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/mh10.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/mh11.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="product">
+        <img src="./images/product/mh12.webp" alt="Product 1">
+        <h3>Sản Phẩm 1</h3>
+        <p>Giá: $100</p>
+        <button>Mua Ngay</button>
+      </div>
+      <!-- Thêm các sản phẩm khác tương tự -->
     </section>
-    <!--slider area end-->
-
-    <!--shipping area start-->
-    <section class="shipping_area mb-70">
-        <div class="container">
-            <div class=" row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_shipping">
-                        <div class="shipping_icone">
-                            <img src="assets/images/about/shipping1.png" alt="">
-                        </div>
-                        <div class="shipping_content">
-                            <h2>Miễn phí vận chuyển</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_shipping">
-                        <div class="shipping_icone">
-                            <img src="assets/images/about/shipping2.png" alt="">
-                        </div>
-                        <div class="shipping_content">
-                            <h2>Hỗ trợ 24/7</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_shipping">
-                        <div class="shipping_icone">
-                            <img src="assets/images/about/shipping3.png" alt="">
-                        </div>
-                        <div class="shipping_content">
-                            <h2>Hoàn tiền 100%</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_shipping">
-                        <div class="shipping_icone">
-                            <img src="assets/images/about/shipping4.png" alt="">
-                        </div>
-                        <div class="shipping_content">
-                            <h2>Thanh toán an toàn</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--shipping area end-->
-
-    <!--banner area start-->
-    <div class="banner_area mb-40">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.html"><img src="assets/images/giamgia/giamgia1.webp" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.html"><img src="assets/images/giamgia/giamgia4.webp" alt=""></a>
-                        </div>
-                    </div>
-                </div>                
-                <div class="col-lg-3 col-md-3">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.html"><img src="assets/images/giamgia/giamgia2.webp" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.html"><img src="assets/images/giamgia/giamgia3.webp" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  </main>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__column">
+      <h3 class="footer__title">Về Chúng Tôi</h3>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="#">Giới thiệu</a></li>
+        <li class="footer__item"><a href="#">Liên hệ</a></li>
+        <li class="footer__item"><a href="#">Tuyển dụng</a></li>
+      </ul>
     </div>
-    <!--banner area end-->
-
-    <!--product area start-->
-    <section class="product_area mb-46">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section_title">
-                        <h2>PC bán chạy</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="product_carousel product_column5 owl-carousel">
-                <!-- pc 1 -->
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details"><img
-                                    src="assets/images/product/pc1.1.webp" alt=""></a>
-                            <a class="secondary_img" href="product-details"><img
-                                    src="assets/images/product/pc1.2.webp" alt=""></a>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="current_price">1.000VND</span>
-                            </div>
-                            <h3 class="product_name"><a href="product-details">PC 1</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <!-- pc 2 -->
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details"><img
-                                    src="assets/images/product/pc2.1.webp" alt=""></a>
-                            <a class="secondary_img" href="product-details"><img
-                                    src="assets/images/product/pc2.2.webp" alt=""></a>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                            </div>
-
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="current_price">2.000VND</span>
-                            </div>
-                            <h3 class="product_name"><a href="product-details">PC2</a>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <!-- pc 3 -->
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details"><img
-                                    src="assets/images/product/pc1.1.webp" alt=""></a>
-                            <a class="secondary_img" href="product-details"><img
-                                    src="assets/images/product/pc1.2.webp" alt=""></a>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="current_price">1.000VND</span>
-                            </div>
-                            <h3 class="product_name"><a href="product-details">PC 1</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <!-- pc 4 -->
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details"><img
-                                    src="assets/images/product/pc2.1.webp" alt=""></a>
-                            <a class="secondary_img" href="product-details"><img
-                                    src="assets/images/product/pc2.2.webp" alt=""></a>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                            </div>
-
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="current_price">2.000VND</span>
-                            </div>
-                            <h3 class="product_name"><a href="product-details">PC2</a>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <!-- pc 5 -->
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details"><img
-                                    src="assets/images/product/pc1.1.webp" alt=""></a>
-                            <a class="secondary_img" href="product-details"><img
-                                    src="assets/images/product/pc1.2.webp" alt=""></a>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="current_price">1.000VND</span>
-                            </div>
-                            <h3 class="product_name"><a href="product-details">PC 1</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <!-- pc 6 -->
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details"><img
-                                    src="assets/images/product/pc2.1.webp" alt=""></a>
-                            <a class="secondary_img" href="product-details"><img
-                                    src="assets/images/product/pc2.2.webp" alt=""></a>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                            </div>
-
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="current_price">2.000VND</span>
-                            </div>
-                            <h3 class="product_name"><a href="product-details">PC2</a>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </article>
-            </div>
-        </div>
-    </section>
-    <!--product area end-->
-
-    <!--banner area start-->
-    <div class="banner_area mb-40">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.html"><img src="assets/images/bg/banner4.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.html"><img src="assets/images/bg/banner5.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="footer__column">
+      <h3 class="footer__title">Tài Khoản</h3>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="#">Tài khoản của tôi</a></li>
+        <li class="footer__item"><a href="#">Lịch sử mua hàng</a></li>
+        <li class="footer__item"><a href="#">Danh sách yêu thích</a></li>
+      </ul>
     </div>
-    <!--banner area end-->
-
-    <!--featured product area start-->
-    <section class="featured_product_area mb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section_title">
-                        <h2>Sản phẩm nổi bật</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row featured_container featured_column3">
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="product-details.html"><img
-                                        src="assets/images/product/product13.jpg" alt=""></a>
-                                <a class="secondary_img" href="product-details.html"><img
-                                        src="assets/images/product/product14.jpg" alt=""></a>
-
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-                                    <span class="current_price">1.000VND</span>
-                                </div>
-                                <h3 class="product_name"><a href="product-details.html">Pellentesque posuere hendrerit
-                                        dui</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="product-details.html"><img
-                                        src="assets/images/product/product15.jpg" alt=""></a>
-                                <a class="secondary_img" href="product-details.html"><img
-                                        src="assets/images/product/product16.jpg" alt=""></a>
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-    
-                                    <span class="current_price">1.000VND</span>
-                                </div>
-                                <h3 class="product_name"><a href="product-details.html">Auctor gravida enim pellentesque
-                                        quam</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="product-details.html"><img
-                                        src="assets/images/product/product17.jpg" alt=""></a>
-                                <a class="secondary_img" href="product-details.html"><img
-                                        src="assets/images/product/product18.jpg" alt=""></a>
-
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-    
-                                    <span class="current_price">1.000VND</span>
-                                </div>
-                                <h3 class="product_name"><a href="product-details.html">Kaoreet lobortis sagittis
-                                        pellentesque</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="product-details.html"><img
-                                        src="assets/images/product/product19.jpg" alt=""></a>
-                                <a class="secondary_img" href="product-details.html"><img
-                                        src="assets/images/product/product20.jpg" alt=""></a>
-
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-    
-                                    <span class="current_price">1.000VND</span>
-                                </div>
-                                <h3 class="product_name"><a href="product-details.html">Cras neque honcus consectetur
-                                        magna</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="product-details.html"><img
-                                        src="assets/images/product/product21.jpg" alt=""></a>
-                                <a class="secondary_img" href="product-details.html"><img
-                                        src="assets/images/product/product22.jpg" alt=""></a>
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-                                    <span class="current_price">1.000VND</span>
-                                </div>
-                                <h3 class="product_name"><a href="product-details.html">Duis pulvinar obortis eleifend
-                                        elementum</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="product-details.html"><img
-                                        src="assets/images/product/product23.jpg" alt=""></a>
-                                <a class="secondary_img" href="product-details.html"><img
-                                        src="assets/images/product/product24.jpg" alt=""></a>
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-    
-                                    <span class="current_price">1.000VND</span>
-                                </div>
-                                <h3 class="product_name"><a href="product-details.html">Fusce ultricies dolor vitae
-                                        tristique suscipit</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="product-details.html"><img
-                                        src="assets/images/product/product15.jpg" alt=""></a>
-                                <a class="secondary_img" href="product-details.html"><img
-                                        src="assets/images/product/product16.jpg" alt=""></a>
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-    
-                                    <span class="current_price">1.000VND</span>
-                                </div>
-                                <h3 class="product_name"><a href="product-details.html">Natus erro at congue massa
-                                        commodo sit</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="product-details.html"><img
-                                        src="assets/images/product/product17.jpg" alt=""></a>
-                                <a class="secondary_img" href="product-details.html"><img
-                                        src="assets/images/product/product18.jpg" alt=""></a>
-
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-    
-                                    <span class="current_price">1.000VND</span>
-                                </div>
-                                <h3 class="product_name"><a href="product-details.html">Cras neque honcus consectetur
-                                        magna</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--featured product area end-->
-
-    <!--product area start-->
-    <section class="product_area mb-46">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section_title">
-                        <h2>Computer & Laptop</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="product_carousel product_column5 owl-carousel">
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details.html"><img
-                                    src="assets/images/product/product1.jpg" alt=""></a>
-                            <a class="secondary_img" href="product-details.html"><img
-                                    src="assets/images/product/product2.jpg" alt=""></a>
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-
-                                <span class="current_price">1.000VND</span>
-                            </div>
-                            <h3 class="product_name"><a href="product-details.html">Natus erro at congue massa commodo
-                                    sit</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details.html"><img
-                                    src="assets/images/product/product3.jpg" alt=""></a>
-                            <a class="secondary_img" href="product-details.html"><img
-                                    src="assets/images/product/product4.jpg" alt=""></a>
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-
-                                <span class="current_price">1.000VND</span>
-                            </div>
-                            <h3 class="product_name"><a href="product-details.html">Itaque earum velit elementum</a>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details.html"><img
-                                    src="assets/images/product/product5.jpg" alt=""></a>
-                            <a class="secondary_img" href="product-details.html"><img
-                                    src="assets/images/product/product6.jpg" alt=""></a>
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-
-                                <span class="current_price">1.000VND</span>
-                            </div>
-                            <h3 class="product_name"><a href="product-details.html">Mauris tincidunt eros posuere
-                                    placerat</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details.html"><img
-                                    src="assets/images/product/product7.jpg" alt=""></a>
-                            <a class="secondary_img" href="product-details.html"><img
-                                    src="assets/images/product/product8.jpg" alt=""></a>
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-
-                                <span class="current_price">1.000VND</span>
-                            </div>
-                            <h3 class="product_name"><a href="product-details.html">Morbi ornare vestibulum massa</a>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details.html"><img
-                                    src="assets/images/product/product9.jpg" alt=""></a>
-                            <a class="secondary_img" href="product-details.html"><img
-                                    src="assets/images/product/product10.jpg" alt=""></a>
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-
-                                <span class="current_price">1.000VND</span>
-                            </div>
-                            <h3 class="product_name"><a href="product-details.html">Porro quisquam eget feugiat
-                                    pretium</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details.html"><img
-                                    src="assets/images/product/product11.jpg" alt=""></a>
-                            <a class="secondary_img" href="product-details.html"><img
-                                    src="assets/images/product/product12.jpg" alt=""></a>
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-
-                                <span class="current_price">1.000VND</span>
-                            </div>
-                            <h3 class="product_name"><a href="product-details.html">Laudantium enim fringilla dignissim
-                                    ipsum primis</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="product-details.html"><img
-                                    src="assets/images/product/product4.jpg" alt=""></a>
-                            <a class="secondary_img" href="product-details.html"><img
-                                    src="assets/images/product/product5.jpg" alt=""></a>
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-
-                                <span class="current_price">1.000VND</span>
-                            </div>
-                            <h3 class="product_name"><a href="product-details.html">Natus erro at congue massa commodo
-                                    sit</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-            </div>
-        </div>
-    </section>
-    <!--product area end-->
-
-    <!--banner area start-->
-    <div class="banner_area mb-40">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-md-9">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.html"><img src="assets/images/bg/banner6.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.html"><img src="assets/images/bg/banner7.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="footer__column">
+      <h3 class="footer__title">Hỗ trợ</h3>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="#">Hướng dẫn mua hàng</a></li>
+        <li class="footer__item"><a href="#">Chính sách đổi trả</a></li>
+        <li class="footer__item"><a href="#">Câu hỏi thường gặp</a></li>
+      </ul>
     </div>
-    <!--banner area end-->
-
-    <!--product area start-->
-    <section class="product_area mb-46">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-md-12">
-                    <div class="product_left_area">
-                        <div class="section_title">
-                            <h2>Smartphone & Tablets</h2>
-                        </div>
-                        <div class="product_carousel product_column4 owl-carousel">
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="product-details.html"><img
-                                                src="assets/images/product/product1.jpg" alt=""></a>
-                                        <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/images/product/product2.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-            
-                                            <span class="current_price">1.000VND</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="product-details.html">Natus erro at congue
-                                                massa commodo sit</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="product-details.html"><img
-                                                src="assets/images/product/product3.jpg" alt=""></a>
-                                        <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/images/product/product4.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-            
-                                            <span class="current_price">1.000VND</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="product-details.html">Itaque earum velit
-                                                elementum</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="product-details.html"><img
-                                                src="assets/images/product/product5.jpg" alt=""></a>
-                                        <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/images/product/product6.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-            
-                                            <span class="current_price">1.000VND</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="product-details.html">Mauris tincidunt eros
-                                                posuere placerat</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="product-details.html"><img
-                                                src="assets/images/product/product7.jpg" alt=""></a>
-                                        <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/images/product/product8.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-            
-                                            <span class="current_price">1.000VND</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="product-details.html">Morbi ornare vestibulum
-                                                massa</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="product-details.html"><img
-                                                src="assets/images/product/product9.jpg" alt=""></a>
-                                        <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/images/product/product10.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-            
-                                            <span class="current_price">1.000VND</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="product-details.html">Porro quisquam eget
-                                                feugiat pretium</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="product-details.html"><img
-                                                src="assets/images/product/product11.jpg" alt=""></a>
-                                        <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/images/product/product12.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-            
-                                            <span class="current_price">1.000VND</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="product-details.html">Laudantium enim
-                                                fringilla dignissim ipsum primis</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="product-details.html"><img
-                                                src="assets/images/product/product4.jpg" alt=""></a>
-                                        <a class="secondary_img" href="product-details.html"><img
-                                                src="assets/images/product/product5.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="cart.html" title="Thêm vào giỏ hàng">Thêm vào giỏ hàng</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-            
-                                            <span class="current_price">1.000VND</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="product-details.html">Natus erro at congue
-                                                massa commodo sit</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                    <!--testimonials section start-->
-                    <div class="testimonial_are">
-                        <div class="section_title">
-                            <h2>Testimonials</h2>
-                        </div>
-                        <div class="testimonial_active owl-carousel">
-                            <article class="single_testimonial">
-                                <figure>
-                                    <div class="testimonial_thumb">
-                                        <a href="#"><img src="assets/images/about/testimonial1.jpg" alt=""></a>
-                                    </div>
-                                    <figcaption class="testimonial_content">
-                                        <p>Support and response has been amazing, helping me with several issues I came
-                                            across and got them solved almost the same day. A pleasure to work with
-                                            them!</p>
-                                        <h3><a href="#">Kathy Young</a><span> - CEO of SunPark</span></h3>
-                                    </figcaption>
-
-                                </figure>
-                            </article>
-                            <article class="single_testimonial">
-                                <figure>
-                                    <div class="testimonial_thumb">
-                                        <a href="#"><img src="assets/images/about/testimonial2.jpg" alt=""></a>
-                                    </div>
-                                    <figcaption class="testimonial_content">
-                                        <p>Perfect Themes and the best of all that you have many options to choose! Best
-                                            Support team ever! Thank you very much!</p>
-                                        <h3><a href="#">John Sullivan</a><span> - Customer</span></h3>
-                                    </figcaption>
-
-                                </figure>
-                            </article>
-                            <article class="single_testimonial">
-                                <figure>
-                                    <div class="testimonial_thumb">
-                                        <a href="#"><img src="assets/images/about/testimonial3.jpg" alt=""></a>
-                                    </div>
-                                    <figcaption class="testimonial_content">
-                                        <p>Code, template and others are very good. The support has served me
-                                            immediately and solved my problems when I need help. Are to be
-                                            congratulated.</p>
-                                        <h3><a href="#">Jenifer Brown</a><span> - Manager of AZ</span></h3>
-                                    </figcaption>
-
-                                </figure>
-                            </article>
-                        </div>
-                    </div>
-                    <!--testimonials section end-->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--product area end-->
-
-    <!--blog area start-->
-    <section class="blog_section mb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section_title">
-                        <h2>From the Blog</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="blog_carousel blog_column4 owl-carousel">
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="blog-details.html"><img src="assets/images/blog/blog1.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
-                                    <h3 class="post_title"><a href="blog-details.html">Blog image post</a></h3>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="blog-details.html"><img src="assets/images/blog/blog2.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
-                                    <h3 class="post_title"><a href="blog-details.html">Post with Gallery</a></h3>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="blog-details.html"><img src="assets/images/blog/blog3.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
-                                    <h3 class="post_title"><a href="blog-details.html">Post with Audio</a></h3>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="blog-details.html"><img src="assets/images/blog/blog4.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
-                                    <h3 class="post_title"><a href="blog-details.html">Post with Video</a></h3>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="blog-details.html"><img src="assets/images/blog/blog5.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
-                                    <h3 class="post_title"><a href="blog-details.html">Maecenas ultricies</a></h3>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--blog area end-->
-
-    <!--brand area start-->
-    <div class="brand_area mb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="brand_container owl-carousel">
-                        <div class="brand_items">
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/images/brand/brand1.jpg" alt=""></a>
-                            </div>
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/images/brand/brand2.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="brand_items">
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/images/brand/brand3.jpg" alt=""></a>
-                            </div>
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/images/brand/brand4.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="brand_items">
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/images/brand/brand5.jpg" alt=""></a>
-                            </div>
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/images/brand/brand6.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="brand_items">
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/images/brand/brand7.jpg" alt=""></a>
-                            </div>
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/images/brand/brand8.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="brand_items">
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/images/brand/brand9.jpg" alt=""></a>
-                            </div>
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/images/brand/brand10.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="brand_items">
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/images/brand/brand2.jpg" alt=""></a>
-                            </div>
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/images/brand/brand3.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="footer__column">
+      <h3 class="footer__title">Kết Nối</h3>
+      <ul class="footer__list footer__list--social">
+        <li class="footer__item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="footer__item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li class="footer__item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li class="footer__item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
     </div>
-    <!--brand area end-->
-    <!-- end main    -->
-    <!--footer area start-->
-    <footer class="footer_widgets">
-        <div class="footer_top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="widgets_container contact_us">
-                            <div class="footer_logo">
-                                <a href="#"><img src="assets/images/logo/logo.png" alt=""></a>
-                            </div>
-                            <div class="footer_contact">
-                                <p>We are a team of designers and developers that
-                                    create high quality HTML Template, Woocommerce, Shopify Theme.</p>
-                                <p><span>Address</span> Your address goes here.</p>
-                                <p><span>Mobile: </span><a href="tel:0123456789">0123456789</a> – <a
-                                        href="tel:0123456789">0123456789</a> </p>
-                                <p><span>Support: </span><a href="mailto:demo@example.com">demo@example.com</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="widgets_container widget_menu">
-                            <h3>Information</h3>
-                            <div class="footer_menu">
-                                <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="blog.html">Delivery Information</a></li>
-                                    <li><a href="contact.html">Privacy Policy</a></li>
-                                    <li><a href="services.html">Terms & Conditions</a></li>
-                                    <li><a href="#">Returns</a></li>
-                                    <li><a href="#">Gift Certificates</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="widgets_container widget_menu">
-                            <h3>My Account</h3>
-                            <div class="footer_menu">
-                                <ul>
-                                    <li><a href="#">My Account</a></li>
-                                    <li><a href="#">Order History</a></li>
-                                    <li><a href="wishlist.html">Wish List</a></li>
-                                    <li><a href="#">Newsletter</a></li>
-                                    <li><a href="#">Affiliate</a></li>
-                                    <li><a href="faq.html">International Orders</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="widgets_container newsletter">
-                            <h3>Follow Us</h3>
-                            <div class="footer_social_link">
-                                <ul>
-                                    <li><a class="facebook" href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li><a class="twitter" href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li><a class="instagram" href="#" title="instagram"><i
-                                                class="fa fa-instagram"></i></a></li>
-                                    <li><a class="linkedin" href="#" title="linkedin"><i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                    <li><a class="rss" href="#" title="rss"><i class="fa fa-rss"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="subscribe_form">
-                                <h3>Join Our Newsletter Now</h3>
-                                <form id="mc-form" class="mc-form footer-newsletter">
-                                    <input id="mc-email" type="email" autocomplete="off"
-                                        placeholder="Your email address..." />
-                                    <button id="mc-submit">Subscribe!</button>
-                                </form>
-                                <!-- mailchimp-alerts Start -->
-                                <div class="mailchimp-alerts text-centre">
-                                    <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-                                    <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-                                    <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-                                </div><!-- mailchimp-alerts end -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer_bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="copyright_area">
-                            <p class="copyright-text">&copy; 2022 <a href="index.html">Junko</a>. Made with <i
-                                    class="fa fa-heart text-danger"></i> by <a href="https://hasthemes.com/"
-                                    target="_blank">HasThemes</a> </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer_payment text-end">
-                            <a href="#"><img src="assets/images/icon/payment.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--footer area end-->
-
-    <!-- modal area start-->
-    <div class="modal fade" id="modal_box" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal_body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-5 col-sm-12">
-                                <div class="modal_tab">
-                                    <div class="tab-content product-details-large">
-                                        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-                                            <div class="modal_tab_img">
-                                                <a href="#"><img src="assets/images/product/product1.jpg" alt=""></a>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="tab2" role="tabpanel">
-                                            <div class="modal_tab_img">
-                                                <a href="#"><img src="assets/images/product/product2.jpg" alt=""></a>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="tab3" role="tabpanel">
-                                            <div class="modal_tab_img">
-                                                <a href="#"><img src="assets/images/product/product3.jpg" alt=""></a>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="tab4" role="tabpanel">
-                                            <div class="modal_tab_img">
-                                                <a href="#"><img src="assets/images/product/product5.jpg" alt=""></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal_tab_button">
-                                        <ul class="nav product_navactive owl-carousel" role="tablist">
-                                            <li>
-                                                <a class="nav-link active" data-bs-toggle="tab" href="#tab1" role="tab"
-                                                    aria-controls="tab1" aria-selected="false"><img
-                                                        src="assets/images/product/product1.jpg" alt=""></a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link" data-bs-toggle="tab" href="#tab2" role="tab"
-                                                    aria-controls="tab2" aria-selected="false"><img
-                                                        src="assets/images/product/product2.jpg" alt=""></a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link button_three" data-bs-toggle="tab" href="#tab3"
-                                                    role="tab" aria-controls="tab3" aria-selected="false"><img
-                                                        src="assets/images/product/product3.jpg" alt=""></a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link" data-bs-toggle="tab" href="#tab4" role="tab"
-                                                    aria-controls="tab4" aria-selected="false"><img
-                                                        src="assets/images/product/product5.jpg" alt=""></a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-7 col-md-7 col-sm-12">
-                                <div class="modal_right">
-                                    <div class="modal_title mb-10">
-                                        <h2>Handbag feugiat</h2>
-                                    </div>
-                                    <div class="modal_price mb-10">
-                                        <span class="new_price">$64.99</span>
-                                        <span class="old_price">$78.99</span>
-                                    </div>
-                                    <div class="modal_description mb-15">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste
-                                            laborum ad impedit pariatur esse optio tempora sint ullam autem deleniti nam
-                                            in quos qui nemo ipsum numquam, reiciendis maiores quidem aperiam, rerum vel
-                                            recusandae </p>
-                                    </div>
-                                    <div class="variants_selects">
-                                        <div class="variants_size">
-                                            <h2>size</h2>
-                                            <select class="select_option">
-                                                <option selected value="1">s</option>
-                                                <option value="1">m</option>
-                                                <option value="1">l</option>
-                                                <option value="1">xl</option>
-                                                <option value="1">xxl</option>
-                                            </select>
-                                        </div>
-                                        <div class="variants_color">
-                                            <h2>color</h2>
-                                            <select class="select_option">
-                                                <option selected value="1">purple</option>
-                                                <option value="1">violet</option>
-                                                <option value="1">black</option>
-                                                <option value="1">pink</option>
-                                                <option value="1">orange</option>
-                                            </select>
-                                        </div>
-                                        <div class="modal_add_to_cart">
-                                            <form action="#">
-                                                <input min="0" max="100" step="2" value="1" type="number">
-                                                <button type="submit">Thêm vào giỏ hàng</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="modal_social">
-                                        <h2>Share this product</h2>
-                                        <ul>
-                                            <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                            <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a>
-                                            </li>
-                                            <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal area end-->
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
+  </div>
+  <div class="footer__copyright">
+    <p>&copy; 2023 - CT media</p>
+  </div>
+</footer>
 </body>
 </html>
